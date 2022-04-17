@@ -1,0 +1,94 @@
+@mixin button-red {
+    background-color: #8E2424;
+    color: white;
+    width: 112px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+//Variables
+@import "variaveis/color.scss";
+//Header
+@import "page/header.scss";
+//Main
+@import "page/main.scss";
+//Footer
+@import "page/footer.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $font;
+}
+@media(max-width: 681px){
+   h1{
+       font-size: 22px;
+   }
+
+   
+    body{background-color: $color2-main;
+   }  
+   .container-header{
+       background-color: white;
+           justify-content: space-between;
+       .burger{
+           display: block;
+           cursor: pointer;
+       }
+       nav{
+           gap: 0;
+       }
+       nav > ul li {
+           display: none;
+       }
+       .div-button button{
+           display: none;
+       }
+   } 
+ .main-title-item1{
+               font-size: 100px;
+           }
+.main-item2{
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.main-item3{
+    img{
+        display: none;
+    }
+}
+.main-item4{
+    align-items: flex-end;
+    h2{
+        display: block;
+    }
+}
+.main-item5{
+    h1{
+        font-size: 16px;
+    }
+}
+
+     footer{
+        h1{
+            font: 25px;
+        }
+        p{
+            padding: 20px 10px;
+            color: #667085;
+        }
+        div input{
+           max-width: 200px;
+            
+        }
+        button{
+            max-width: 80px;
+            @include button-red()
+        }
+    }
+}

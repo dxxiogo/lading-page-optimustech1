@@ -1,0 +1,57 @@
+.container-header{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .burger{
+        display: none;
+        .burger-item{
+            background-color : black;
+            height: 3px;
+            width: 16px;
+           margin: 2px;
+       }
+    }
+  
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        
+    }
+    h1{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    li a{
+        color: #667085;
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+    .div-button{
+        gap: 15px;
+    }
+    .nav-div-first{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .button-red{
+        @include button-red()
+    }
+    .button-red:hover{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.159);
+    }
+}
+button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
