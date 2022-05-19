@@ -26,34 +26,45 @@
     font-family: $font;
 }
 @media(max-width: 681px){
-   h1{
-       font-size: 22px;
-   }
-
-   
+    
+    
     body{background-color: $color2-main;
-   }  
-   .container-header{
-       background-color: white;
-           justify-content: space-between;
-       .burger{
-           display: block;
-           cursor: pointer;
-       }
-       nav{
-           gap: 0;
-       }
-       nav > ul li {
-           display: none;
-       }
-       .div-button button{
-           display: none;
-       }
-   } 
- .main-title-item1{
-               font-size: 100px;
-           }
-.main-item2{
+    }  
+    .container-header{
+        background-color: white;
+        justify-content: space-between;
+        .burger{
+            display: block;
+            cursor: pointer;
+        }
+        nav{
+            gap: 0;
+        }
+        nav > ul li {
+            display: none;
+        }
+        .div-button button{
+            display: none;
+        }
+    } 
+    .main-item1{
+        height: 70vh;
+        .detalhe-fundo{
+            height: 70vh;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .main-content-text1{
+            font-size: 14px;
+            padding-top: 30px;
+            width: 300px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .main-item2{
     flex-wrap: wrap;
     gap: 60px;
 }
@@ -61,9 +72,16 @@
     img{
         display: none;
     }
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+        margin: 20px;
+    }
 }
 .main-item4{
-    align-items: flex-end;
+
     h2{
         display: block;
     }
